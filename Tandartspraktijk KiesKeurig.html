@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tandartsafspraak</title>
+    </head>
+    <body>
+        <h1>Tandartsafspraak</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus nulla sit amet tincidunt imperdiet. Duis ultrices massa in purus fringilla,<br> vulputate placerat massa rhoncus. Pellentesque vel neque nibh. Vestibulum tellus magna, finibus non dolor eu, pulvinar dapibus enim.<br> Sed in dapibus metus. Suspendisse rutrum scelerisque augue et elementum. Nulla in neque mauris. Vestibulum ultricies ligula vel sapien venenatis,<br> vitae sollicitudin mi eleifend. Nam congue vel leo sit amet pretium. Integer hendrerit justo nec nulla auctor congue.</p><br>
+        <img width="300" src="afbeeldingen/tandartsafspraak.jpg">
+        <img width="300" src="afbeeldingen/Periodieke-Controle.jpg">
+        <img width="300" src="afbeeldingen/Mondhygienist-Tandarts-Krimpen-aan-den-Ijssel.jpg"><br><br>
+        <form id="contactform" action="https://formspree.io/f/xzbnljdr" method="post">
+            <fieldset>
+                <legend>Persoonlijke gegevens</legend>
+                <label for="naam">Naam:</label>
+                <input id="naam" type="text" name="naam"><br><br>
+                <input type="radio" name="geslacht" value="man" checked>Man
+                <input type="radio" name="geslacht" value="vrouw">Vrouw
+                <input type="radio" name="geslacht" value="anders">Anders<br><br>
+                <label for="adres">Adres:</label>
+                <input id="adres" type="text" name="adres"><br><br>
+                <label for="postcode">Postcode:</label>
+                <input id="postcode" type="text" name="postcode"><br><br>
+                <label for="woonplaats">Woonplaats:</label>
+                <input id="woonplaats" type="text" name="woonplaats"><br><br>
+            </fieldset><br><br>
+            <fieldset>
+                <legend>Beschrijving van klachten</legend>
+                <b> Selecteer uw klacht</b><br><br>
+                <input type="checkbox" name="klacht" value="Kiespijn">Kiespijn
+                <input type="checkbox" name="klacht" value="Tandsteen">Tandsteen
+                <input type="checkbox" name="klacht" value="Ontstoken tandvlees">Ontstoken tandvlees
+                <input type="checkbox" name="klacht" value="Anders">Anders<br><br>
+                <label for="fotobestand">Voeg een foto toe</label>
+                <input type="file" id="fotobestand" name="fotobestand"><br><br>
+            </fieldset><br><br>
+            <fieldset>
+                <legend>Toelichting van klachten</legend>
+                <b>Wat voor klachten ervaart u?</b><br><br>
+                <textarea cols="50" rows="10" name="toelichting" maxlength="1500"></textarea><br><br>
+                <b> Selecteer de gewenste afspraakdatum</b>
+                <input type="date" name="afspraakdatum" max="2050-12-31">
+            </fieldset><br><br>
+            <input type="submit" value="Verzend">
+        </form>
+    </body>
+</html>
